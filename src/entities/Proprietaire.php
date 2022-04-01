@@ -150,7 +150,7 @@ class Proprietaire
         return $this->Code_identite_national;
     }
     public  function setCode_identite_national($Code_identite_national){
-        $this->Code_identite_national=$Code_identite_national;
+        $this->Code_identite_national=$Code_identite_national; 
     }
    
 
