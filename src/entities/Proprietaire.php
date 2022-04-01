@@ -41,7 +41,7 @@ class Proprietaire
      */
     private  $Numero;
      /**
-     * @ORM\Column(type="bool")
+     * @ORM\Column(type="boolean")
      */
     private  $Sexe;
      /**
