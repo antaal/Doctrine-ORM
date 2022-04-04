@@ -8,7 +8,7 @@
  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire</title>
+    <title></title>
     <link rel="stylesheet" href="public/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
+
      
     </style>
     <script>
@@ -26,58 +27,55 @@
     
 </head>
 <body>
-  <h1 class="text-center">Formulaire D'enregistrement</h1>
+    <h1 class="text-center">Modifier Propriétaire</h1>
 <div class="col-6 m-5 mx-auto">
-        <form method="POST" action="http://doctrine-brief.test/Proprietaire/ajout" >
+        <form method="POST" action="http://doctrine-brief.test/Proprietaire/modifier/<?=$data->getId()?>" >
             <div class="mb-3">
+            <input type="hidden" name="id_proprietaire" value="<?=$data->getId() ?>"id="">
               <label for="Nom" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="Nom" name="Nom" >
+              <input type="text" class="form-control" id="Nom" value="<?=$data->getNom() ?>" name="Nom" >
             </div>
             <div class="mb-3">
                 <label for="Prenom" class="form-label">Prenom</label>
-                <input type="text" class="form-control" id="Prenom" name="Prenom" >
+                <input type="text" class="form-control" id="Prenom" value="<?=$data->getPrenom() ?>"  name="Prenom" >
               </div>
               <div class="mb-3">
                 <label for="Email" class="form-label">Email</label>
-                <input type="text"  class="form-control" id="Email" name="Email" >
+                <input type="text"  class="form-control" id="Email" value="<?=$data->getEmail() ?>"  name="Email" >
               </div>
               <div class="mb-3">
                 <label for="Mot_passe" class="form-label">Mot de Passe</label>
-                <input type="text"  class="form-control" id="Mot_passe" name="Mot_passe" >
+                <input type="text"  class="form-control" id="Mot_passe"value="<?=$data->getMot_passe() ?>" name="Mot_passe" >
               </div>
               <div class="mb-3">
                 <label for="Civilite" class="form-label">Civilite</label>
-                <input type="text" class="form-control" id="Civilite" name="Civilite" >
+                <input type="text" class="form-control" id="Civilite" value="<?=$data->getCivilite() ?>"  name="Civilite" >
               </div>
               <div class="mb-3">
                 <label for="Numero" class="form-label">Numéro</label>
-                <input type="number"  class="form-control" id="Numero" name="Numero" >
+                <input type="number"  class="form-control" id="Numero" value="<?=$data->getNumero() ?>" name="Numero" >
               </div>
               <div class="mb-3">
                 <label for="Sexe" class="form-label">Sexe</label>
-                <input type="text"  class="form-control" id="Sexe" name="Sexe" >
+                <input type="text"  class="form-control" id="Sexe" value="<?=$data->getSexe() ?>"  name="Sexe" >
               </div>
               <div class="mb-3">
                 <label for="Date_naissance" class="form-label">Date de Naissance</label>
-                <input type="datetime" class="form-control" id="Date_naissance"  name="Date_naissance" >
+                <input type="datetime" class="form-control" id="Date_naissance" value="<?=$data->getDate_naissance() ?>"  name="Date_naissance" >
               </div>
               <div class="mb-3">
                 <label for="Lieu_naissance" class="form-label">Lieu de Naissance</label>
-                <input type="text" class="form-control" id="Lieu_naissance" name="Lieu_naissance" >
+                <input type="text" class="form-control" id="Lieu_naissance"value="<?=$data->getLieu_naissance() ?>"  name="Lieu_naissance" >
               </div>
               <div class="mb-3">
                 <label for="Code_identite_national" class="form-label">Code d'Identité National</label>
-                <input type="number" class="form-control" id="Code_identite_national"  name="Code_identite_national" >
+                <input type="number" class="form-control" id="Code_identite_national" value="<?=$data->getCode_identite_national() ?>"   name="Code_identite_national" >
               </div>
               <div class="mb-3">
                 <label for="Numero_identite_national" class="form-label">Numéro d'Identité National</label>
-                <input type="number"  class="form-control" id="Numero_identite_national" name="Numero_identite_national" >
+                <input type="number"  class="form-control" id="Numero_identite_national" value="<?=$data->getNumero_identite_national() ?>"  name="Numero_identite_national" >
               </div>
-              
-              
-             
-              
-              <input type="submit" class="button" value="Ajouter" name="add">
+              <input type="submit" class="button" value="Modifier" name="add">
           </form>
       </div>
       <div class="col-6">

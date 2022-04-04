@@ -8,7 +8,7 @@
  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Login System</title>
+    <title></title>
     <link rel="stylesheet" href="public/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -43,8 +43,8 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Civilite</th>
-                                        <th>Prenom & Nom</th>
-                                        <th>Numero</th>
+                                        <th>Prénom & Nom</th>
+                                        <th>Numéro</th>
                                         <th>Email</th>
                                         <th>Action</th>
                                     </tr>
@@ -60,8 +60,8 @@
                                         echo "<td>" . $proprietaire->getEmail(). "</td>";
                                         echo "<td>";
                                             echo '<a href="http://doctrine-brief.test/Proprietaire/detail/'.$proprietaire->getId().'" class="mr-3" title="Detail Proprietaire" data-toggle="tooltip"><span class="fa fa-eye"></span></a>';
-                                            echo '<a href="http://doctrine-brief.test/Proprietaire/edit/'.$proprietaire->getId().'" class="mr-3" title="Modification" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
-                                            echo '<a href="http://doctrine-brief.test/Proprietaire/delete/'.$proprietaire->getId().'" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';
+                                            echo '<a href="http://doctrine-brief.test/Proprietaire/edit/'.$proprietaire->getId().'" class="mr-3" title="Modifier Proprietaire" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>';
+                                            echo '<a href="http://doctrine-brief.test/Proprietaire/delete/'.$proprietaire->getId().'" title="Supprimer Proprietaire" data-toggle="tooltip"><span class="fa fa-trash"></span></a>';
                                         echo "</td>";
                                     echo "</tr>";
                                 }

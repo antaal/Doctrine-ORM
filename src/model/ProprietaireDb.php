@@ -30,7 +30,7 @@ class ProprietaireDb extends Model
   }
   public function editBd($id) {
 
-      return $proprietaireTrouver = $this->entityManager->find("Proprietaire",$id);
+      return $owner = $this->entityManager->find("Proprietaire",$id);
    }
 
    public function modifierBd(){
@@ -39,8 +39,8 @@ class ProprietaireDb extends Model
    }
 
    public function deleteBd($id){
-      $proprietaireTrouver = $this->entityManager->find("Proprietaire",$id);
-      $this->entityManager->remove($proprietaireTrouver);
+      $owner = $this->entityManager->find("Proprietaire",$id);
+      $this->entityManager->remove($owner);
       $this->entityManager->flush();
    }
 }

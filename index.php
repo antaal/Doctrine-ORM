@@ -37,9 +37,7 @@
       <li class="nav-item">
         <a class="nav-link" href="/proprietaire/liste">Proprietaires</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/proprietaire/ajout">Ajouter</a>
-      </li>
+     
     </ul>
   </div>
 </nav>

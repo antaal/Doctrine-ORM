@@ -11,7 +11,7 @@ class View
         $args=func_get_args();
         switch ($num) {
             case 1:
-                 $url = 'http://localhost:8080/Doctrine-Brief/';
+                 $url = 'http://doctrine-brief.test/';
                 $file="src/view/".$args[0].".php";
                 
                 if (file_exists($file)) {
@@ -25,7 +25,7 @@ class View
                     $file="src/view/".$args[0].".php";
                 if (file_exists($file)) {
                     $data=$args[1];
-                    $url = 'http://localhost:8080/Doctrine-Brief/public/';
+                    $url = 'http://doctrine-brief.test/public/';
                    require_once $file;
                 }else {
                     die($file." n'existe pas comme vue");

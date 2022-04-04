@@ -59,20 +59,17 @@ class ProprietaireController extends Controller
       return $this->view->load("proprietaire/ajout");
     }
 
-   
-   /**
-    * http://localhost:8081/projects/lpgl/tpmvc/tpORM/Roles/edit/12
-    */
+  
    public function edit($id) {
-      $trouver = $this->proprietairedao->editBd($id);
+      $proprio = $this->proprietairedao->editBd($id);
       
-      return $this->view->load("proprietaire/edit",$trouver);
+      return $this->view->load("proprietaire/editer",$proprio);
    }
 
    public function detail($id) {
-      $trouver = $this->proprietairedao->editBd($id);
+      $proprio = $this->proprietairedao->editBd($id);
       
-      return $this->view->load("proprietaire/detail",$trouver);
+      return $this->view->load("proprietaire/detail",$proprio);
    }
 
    public function modifier($id) {
