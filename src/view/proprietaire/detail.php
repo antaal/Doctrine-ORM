@@ -27,11 +27,12 @@
                         <label><h4>Mot de Passe:</h4></label>
                         <td><?=  $data->getMot_passe()?></td>
                     </div>
-                    <!-- <div class="form-group">
+                    <div class="form-group">
                         <label><h4>Sexe:</h4></label>
-                        <td><?=  $data->getSexe()
+                        <td><?= 
+                         $data->getSexe() ? "Feminin" : "Masculin"
                         ?></td>
-                    </div> -->
+                    </div>
                     <div class="form-group">
                         <label><h4>Date de Naissance:</h4></label>
                         <td><?= $data->getDate_naissance()?></td>
