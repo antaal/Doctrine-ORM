@@ -1,10 +1,11 @@
 <?php
-
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="Proprietaire")
+ * @ORM\Table(name="proprietaires")
  */
 
 class Proprietaire 
@@ -53,7 +54,7 @@ class Proprietaire
      */
     private  $Lieu_naissance;
      /**
-     * @ORM\Column(type="string",unique=true)
+     * @ORM\Column(type="integer",unique=true)
      */
     private  $Code_identite_national;
      /**
@@ -64,7 +65,7 @@ class Proprietaire
 
     public function __construct()
     {
-
+                
     }
 
 
